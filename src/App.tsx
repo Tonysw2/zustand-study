@@ -1,9 +1,13 @@
-export function App() {
-  return (
-    <div className="flex items-center justify-center min-h-screen">
-      <div className="font-medium">Hello World</div>
-    </div>
-  )
-}
+import { RouterProvider } from 'react-router'
+import { Toaster } from './components/ui/sonner'
+import { ThemeProvider } from './providers/theme'
+import { router } from './routes'
 
-export default App
+export const App = () => {
+	return (
+		<ThemeProvider>
+			<RouterProvider router={router} />
+			<Toaster />
+		</ThemeProvider>
+	)
+}
