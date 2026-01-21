@@ -4,10 +4,10 @@ import { ThemeProvider } from './providers/theme'
 import { router } from './routes'
 
 export const App = () => {
-	return (
-		<ThemeProvider>
-			<RouterProvider router={router} />
-			<Toaster />
-		</ThemeProvider>
-	)
+  return (
+    <ThemeProvider>
+      <RouterProvider router={router} />
+      <Toaster />
+    </ThemeProvider>
+  )
 }
